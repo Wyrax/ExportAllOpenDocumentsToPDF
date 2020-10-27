@@ -1,10 +1,5 @@
 ﻿// Adobe InDesign CC/2020 script that exports all open documents as PDFs using text data from latest added text frame as file name.
 
-var disk = new Folder('T:/');
-    if (!disk.exists) {
-        $.writeln(disk + "not exists");
-    }
-
 if (app.documents.length == 0) {
     alert('Open documents first.');
 } else {
