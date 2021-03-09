@@ -5,7 +5,7 @@ if (app.documents.length == 0) {
     alert('Open documents first.');
 } else {
     var documentsNumber = app.documents.length;
-    var myPDFExportPreset = app.pdfExportPresets.item("Press Quality Sportlife");
+    var myPDFExportPreset = app.pdfExportPresets.item("Sportlife"); // << CHANGE THIS to actual PDF-preset name if error message: Invalid value for parameter 'using' of method 'exportFile'. Expected PDFExportPreset, but received nothing.
     var outputFolder = new Folder('D:/PDFbasket/');
     if (!outputFolder.exists) {
         outputFolder.create();

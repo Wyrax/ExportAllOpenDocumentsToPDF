@@ -13,7 +13,7 @@ This script is an addition to InDesign Data Merge functionality. It makes possib
 Save your data as CSV or TXT file with fields that contain 'file name' (without '.pdf' extension, it will be added automatically).
 
 ## Step 2. Prepare layout for data merge
-Make all needed edits and place all the needed data fields in the document
+Make all needed edits and place all the needed data fields in the document.
 
 ## Step 3. Last add a text frame that contain file names
 This text frame must be added as last so it takes index[0] in InDesign textFrames array. Text frame must be positioned at corresponding page layout. Don't worry that new text frame stays on top of your layout: after script take file name value it will delete this frame. Any text overflows is ignored by the script so make sure they all will fit by length (make font size not too big).
